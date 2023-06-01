@@ -217,5 +217,9 @@ footer{
         color: white;
         z-index: 1;
     }
+    
+        .services_section h2{
+        padding: 0 25px;
+    }
 }
 
