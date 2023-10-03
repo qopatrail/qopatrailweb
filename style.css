@@ -35,7 +35,7 @@ header h2{
     z-index: 1;
 }
 
-header a{
+/* header a{
     margin: 100px auto 0;
     width: 230px;
     height: 50px;
@@ -48,6 +48,93 @@ header a{
     background-color: rgb(54, 162, 181);
     z-index: 1;
     text-decoration: none;
+} */
+
+.arrow_container{
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    width: fit-content;
+
+}
+
+.arrow {
+    opacity: 0;
+    position: absolute;
+        left: 40%;
+        top: 60%;
+    transform-origin: 50% 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.arrow-first {
+    animation: arrow-movement 2s ease-in-out infinite;
+}
+.arrow-second {
+    animation: arrow-movement 2s 1s ease-in-out infinite;
+}
+
+.arrow:before,
+.arrow:after {
+    background: #fff;
+    content: '';
+    display: block;
+    height: 3px; 
+    position: absolute;
+        top: 0;
+        left: 0;
+    width: 30px;
+}
+
+.arrow:before {
+    transform: rotate(45deg) translateX(-23%);
+    transform-origin: top left;
+}
+
+.arrow:after {
+    transform: rotate(-45deg) translateX(23%);
+    transform-origin: top right;
+}
+
+@keyframes arrow-movement {
+    0% { 
+        opacity: 0;
+        top: 45%;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% { 
+        opacity: 0;
+    }
+}
+
+
+
+header a{
+    margin: 12px auto 0;
+    width: fit-content;
+    height: fit-content;
+    /* text-align: center;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 50px; */
+    /* border-radius: 20px; */
+    color: #EEEEEE;
+    background-color: transparent;
+    z-index: 1;
+    /* text-decoration: none; */
+}
+
+.container_{
+    margin: 40px auto 0;
+    position: relative;
+    color: white;
+}
+
+.container_ p{
+    font-size: 18px;
+    font-weight: bold;
 }
 
 header a:hover{
@@ -217,9 +304,19 @@ footer{
         color: white;
         z-index: 1;
     }
-    
-        .services_section h2{
-        padding: 0 25px;
+
+    .services_section h2{
+        padding: 0 20px;
     }
+}
+
+
+@media screen and (max-width: 480px){
+
+    .txt_header{
+        font-size: 46px;
+        margin-top: 25px;        
+    }
+
 }
 
