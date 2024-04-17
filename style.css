@@ -12,12 +12,14 @@ header {
     align-items: center;
     flex-flow: column;
     width: 100%;
+    /* width: 100vw; */
     height: 600px;
     padding-top: 100px;
     overflow-y: hidden;
-    background-image: url("https://i.imgur.com/E2qwa4b.jpeg");
-    background-position: 80% 90%;
+    /* background-image: url("https://i.imgur.com/E2qwa4b.jpeg"); */
+    background-image: url("https://i.imgur.com/YrMWMGa.jpeg");
     background-size: cover;
+    background-position: 50% 40%;
     background-repeat: no-repeat;
 }
 
@@ -113,17 +115,23 @@ header h2{
 
 header a{
     margin: 12px auto 0;
-    width: fit-content;
-    height: fit-content;
-    /* text-align: center;
-    font-weight: 500;
-    font-size: 1.3rem;
-    line-height: 50px; */
+    /* width: fit-content; */
+    width: 200px;
+    /* height: fit-content; */
+    height: 75px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    /* font-weight: 500;
+    font-size: 1.3rem; */
+    line-height: 72px;
     /* border-radius: 20px; */
     color: #EEEEEE;
-    background-color: transparent;
+    background-color: #cca402ff;
     z-index: 1;
-    /* text-decoration: none; */
+    text-decoration: none;
+    transform: rotate(-6deg);
 }
 
 .container_{
@@ -149,7 +157,7 @@ header a:hover{
     background-color: black;
     height: 100%;
     width: 100%;
-    opacity: 0.3;
+    opacity: 0.2;
 }
 
 .logo_container {
