@@ -134,6 +134,26 @@ header a{
     transform: rotate(-6deg);
 }
 
+
+.about {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #EEEEEE;
+    text-align: center;
+    background-color: #1f1f1f;
+    height: 300px;
+    padding: 50px 120px;
+    
+}
+
+.about p{
+    width: 100%;
+    margin: 20px auto;
+    padding: 0px 55px;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight:500;
+}
+
 .container_{
     margin: 40px auto 0;
     position: relative;
@@ -316,6 +336,25 @@ footer{
     .services_section h2{
         padding: 0 20px;
     }
+
+
+    .about {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: #EEEEEE;
+        text-align: center;
+        background-color: #1f1f1f;
+        height: 300px;
+        padding: 35px 55px;
+        
+    }
+
+    .about p{
+        margin: 15px auto;
+        padding: 10px 10px;
+        font-size: 18px;
+        line-height: 25px;
+        font-weight:500;
+    }
 }
 
 
@@ -324,6 +363,24 @@ footer{
     .txt_header{
         font-size: 46px;
         margin-top: 25px;        
+    }
+
+    .about {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: #EEEEEE;
+        text-align: center;
+        background-color: #1f1f1f;
+        height: 300px;
+        padding: 30px 40px;
+        
+    }
+
+    .about p{
+        margin: 10px auto;
+        padding: 0px 10px;
+        font-size: 18px;
+        line-height: 25px;
+        font-weight:400;
     }
 
 }
